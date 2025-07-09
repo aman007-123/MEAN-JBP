@@ -1,0 +1,93 @@
+.container {
+  width: 100%;
+}
+
+.init-swiper {
+  width: 100%;
+}
+
+// .swiper-wrapper {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .swiper-slide {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: #fff;
+//   padding: 20px;
+//   border-radius: 8px;
+//   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+// }
+// .swiper-pagination {
+//   margin-top: 20px;
+//   position: relative;
+// }
+// .swiper-pagination .swiper-pagination-bullet {
+//   width: 12px;
+//   height: 12px;
+//   background-color: var(--background-color);
+//   opacity: 1;
+//   border: 1px solid var(--accent-color);
+// }
+// .swiper-pagination .swiper-pagination-bullet-active {
+//   background-color: var(--accent-color);
+// }
+
+.slider {
+  position: relative;
+  width: 100%;
+  // max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 20px; /* Gap between images */
+}
+
+.slide {
+  min-width: calc(50% - 10px); /* Display two slides per page with gap */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  background-color: var(--surface-color);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  // text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.pagination span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.pagination .active {
+  background-color: var(--accent-color);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .slide {
+    min-width: calc(100%); /* Display one slide per page on small screens */
+  }
+}

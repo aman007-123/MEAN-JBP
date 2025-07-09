@@ -1,0 +1,100 @@
+<!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper init-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-box" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-item">
+                        <img src="assets/img/pohe-jalebi.jpg" class="img-fluid" alt="..." />
+                        <div class="card-content">
+                            <h3><a href="course-details.html">Poha Jalebi</a></h3>
+                            <p class="description">
+                                Et architecto provident deleniti facere repellat nobis iste.
+                                Id facere quia quae dolores dolorem tempore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-box" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card-item">
+                        <img src="assets/img/samosa_kachori.jpg" class="img-fluid" alt="..." />
+                        <div class="card-content">
+                            <h3><a href="course-details.html">Samosa kachori</a></h3>
+                            <p class="description">
+                                Et architecto provident deleniti facere repellat nobis iste.
+                                Id facere quia quae dolores dolorem tempore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-box" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card-item">
+                        <img src="assets/img/chaat.jpg" class="img-fluid" alt="..." />
+                        <div class="card-content">
+                            <h3><a href="course-details.html">Chaat fulki</a></h3>
+                            <p class="description">
+                                Et architecto provident deleniti facere repellat nobis iste.
+                                Id facere quia quae dolores dolorem tempore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-box" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card-item">
+                        <img src="assets/img/noodles_manchuarian.jpg" class="img-fluid" alt="..." />
+                        <div class="card-content">
+                            <h3><a href="course-details.html">Noodles Manchurian</a></h3>
+                            <p class="description">
+                                Et architecto provident deleniti facere repellat nobis iste.
+                                Id facere quia quae dolores dolorem tempore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-box" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card-item">
+                        <img src="assets/img/course-3.jpg" class="img-fluid" alt="..." />
+                        <div class="card-content">
+                            <h3><a href="course-details.html">Rasgulle khoba jalebi</a></h3>
+                            <p class="description">
+                                Et architecto provident deleniti facere repellat nobis iste.
+                                Id facere quia quae dolores dolorem tempore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div> -->
+
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper init-swiper">
+        <div class="slider">
+            <div class="slides-container" [style.transform]="'translateX(' + (-currentIndex * 100 / 2) + '%)'">
+                <div class="slide" *ngFor="let image of images">
+                    <img [src]="image" alt="Image">
+                </div>
+            </div>
+            <div class="pagination">
+                <span *ngFor="let i of paginationArray" [class.active]="i === currentIndex" (click)="goToSlide(i)">
+                </span>
+            </div>
+        </div>
+
+
+    </div>
+</div>

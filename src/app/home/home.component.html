@@ -1,0 +1,206 @@
+<main class="main">
+    <!-- Head Section -->
+    <section id="head" class="head section dark-background">
+        <video class="background-video" muted>
+            <source src="assets/img/jbp-video.mp4" type="video/mp4">
+        </video>
+        <img src="assets/img/Jabalpur-Kachnar-City-and-S-1024x683.jpg" alt="" data-aos="fade-in"
+            *ngIf="!isVideoPlaying" />
+
+        <div class="container" *ngIf="!isVideoPlaying">
+            <p data-aos="fade-up" data-aos-delay="200">
+                Welcome to the city of Jabalpuriya's <br />
+                Let's explore the beautiful city together.....
+            </p>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="300">
+                <button class="btn-get-started" id="getTour" (click)="playVideo()">Get tour</button>
+            </div>
+        </div>
+    </section>
+    <!-- Head Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/img/madhya-pradesh-map.jpg" class="img-fluid border" alt="" />
+                </div>
+
+                <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+                    <h3>
+                        Jabalpur is a vibrant city located in the heart of India, within the
+                        state of Madhya Pradesh.
+                    </h3>
+                    <p class="fst-italic">
+                        It's known for its rich history, cultural heritage, and stunning
+                        natural beauty. Here are a few highlights:
+                    </p>
+                    <ul>
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            <span>Jabalpur has a fascinating history, with roots tracing back to
+                                ancient times. It's believed to have been a major center during
+                                the reign of the Gond rulers and later, under the Maratha
+                                Empire.</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            <span>The city is home to several landmarks such as the Marble Rocks
+                                at Bhedaghat, the Madan Mahal Fort, and the Rani Durgavati
+                                Museum, which offers insights into the region's past.</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            <span>Jabalpur is blessed with scenic landscapes, including the
+                                famous Dhuandhar Falls on the Narmada River. The surrounding
+                                hills and forests add to its charm.</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            <span>The city is a melting pot of cultures and traditions. Festivals
+                                and fairs are celebrated with great enthusiasm, reflecting the
+                                diverse heritage of its residents.</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            <span>Jabalpur is also known for its educational institutions,
+                                including Rani Durgavati University and several prestigious
+                                schools and colleges.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /About Section -->
+
+    <!-- Overview places Section -->
+    <section id="places" class="places section">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Overview</h2>
+            <p>Popular places</p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-item">
+                        <a routerLink="/sites">
+                            <img src="assets/img/Gwarighat_.jpg" class="img-fluid" alt="..." />
+                        </a>
+                        <div class="card-content">
+                            <h3>Gwarighat</h3>
+                            <p class="description">
+                                Gwarighat, also known as Gwari Ghat, is a serene and culturally
+                                significant location in Jabalpur, Madhya Pradesh. Situated on
+                                the banks of the Narmada River, it holds great religious
+                                importance for Hindus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <div class="card-item">
+                        <a routerLink="/sites">
+                            <img src="assets/img/bhedaghat_.jpg" class="img-fluid" alt="..." />
+                        </a>
+                        <div class="card-content">
+                            <h3>Bhedaghat Dhuandhar waterfall</h3>
+                            <p class="description">
+                                The Bhedaghat Dhuandhar Waterfall is one of the most stunning
+                                natural attractions in Jabalpur, Madhya Pradesh. The waterfall
+                                is located on the Narmada River, amidst the beautiful Marble
+                                Rocks at Bhedaghat, about 25 kilometers west of city.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+                    data-aos-delay="300">
+                    <div class="card-item">
+                        <a routerLink="/sites">
+                            <img src="assets/img/madan_mahal.jpg" class="img-fluid" alt="..." />
+                        </a>
+                        <div class="card-content">
+                            <h3>Madan mahal fort</h3>
+                            <p class="description">
+                                Madan Mahal Fort is a historic fort located in Jabalpur, Madhya
+                                Pradesh. Built by the Gond ruler, Raja Madan Shah, in the 11th
+                                century, the fort stands atop a rocky hill and offers panoramic
+                                views of the surrounding area.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Overview places Section -->
+
+    <!-- Overview food Section -->
+    <section id="food" class="food section">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Overview</h2>
+            <p>Popular Food</p>
+        </div>
+
+        <app-swiper-carousel></app-swiper-carousel>
+    </section>
+    <!-- /Overview food Section -->
+
+    <!-- Overview infrastructure Section -->
+    <section id="infrastructure" class="section infrastructure">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Overview</h2>
+            <p>Popular Infrastructure</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-item">
+                        <img src="assets/img/nagar_nigam.jpg" class="img-fluid img-scaling" alt="" />
+                        <div class="card-content">
+                            <h4>Nagar Nigam</h4>
+                            <p>
+                                The Jabalpur Municipal Corporation (JMC) is the governing civic
+                                body responsible for the administration and infrastructure of
+                                Jabalpur city in Madhya Pradesh.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-item">
+                        <img src="assets/img/gun_carriage_factory.jpg" class="img-fluid img-scaling" alt="" />
+                        <div class="card-content">
+                            <h4>Gun carriage factory</h4>
+                            <p>
+                                The Gun Carriage Factory (GCF) in Jabalpur, Madhya Pradesh, is
+                                one of the oldest ordnance factories in India.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-item">
+                        <img src="assets/img/high_court.jpg" class="img-fluid img-scaling" alt="" />
+                        <div class="card-content">
+                            <h4>High court</h4>
+                            <p>
+                                The High Court of Madhya Pradesh is the principal constitutional
+                                court for the state, located in Jabalpur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Overview infrastructure Section -->
+</main>
